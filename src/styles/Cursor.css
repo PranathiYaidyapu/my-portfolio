@@ -1,0 +1,22 @@
+.cursor {
+    position: fixed;
+    width: 14px;
+    height: 14px;
+
+    border: 1.5px solid rgba(37, 99, 235, 0.6);
+    background: rgba(37, 99, 235, 0.08);
+
+    backdrop-filter: blur(4px);
+
+    border-radius: 50%;
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    transition:
+        left 0.08s linear,
+        top 0.08s linear,
+        width 0.2s ease,
+        height 0.2s ease;
+}

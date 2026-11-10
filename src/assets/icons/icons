@@ -1,0 +1,12 @@
+import {
+	FaReact,
+	FaPython,
+	FaJava,
+	FaGitAlt,
+	FaGithub,
+	FaHtml5,
+	FaCss3Alt
+} from "react-icons/fa";
+
+
+

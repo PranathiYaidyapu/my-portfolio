@@ -1,0 +1,38 @@
+.contact{
+    padding:100px 8%;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-info a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:#0F172A;
+    background:#fff;
+    padding:18px 25px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.contact-info a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(37,99,235,.15);
+}
+
+.contact-info svg{
+    font-size:24px;
+    color:#2563EB;
+}

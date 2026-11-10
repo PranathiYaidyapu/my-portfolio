@@ -1,0 +1,274 @@
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  padding: 45px 5%;
+  background: linear-gradient(
+    135deg,
+    #f8fbff 0%,
+    #eef6ff 55%,
+    #ffffff 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  right: -180px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  height: 420px;
+  background: #60a5fa;
+  opacity: 0.12;
+  filter: blur(120px);
+  border-radius: 50%;
+}
+
+/* ==========================
+   HERO CONTAINER
+========================== */
+
+.hero-container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+/* ==========================
+   LEFT SIDE
+========================== */
+
+.hero-content {
+  flex: 1.2;
+  padding-left: 20px;
+  text-align: left;
+  z-index: 2;
+}
+
+.hero-greeting {
+  font-size: 1.15rem;
+  color: #2563eb;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #0f172a;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #06b6d4;
+  margin: 0 0 22px;
+}
+
+.hero-description {
+  max-width: 620px;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #475569;
+  margin: 0;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 13px 26px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.25);
+}
+
+.btn-secondary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  background: white;
+}
+
+.btn-secondary:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ==========================
+   TECH STACK
+========================== */
+
+.hero-content .tech-stack {
+  margin-top: 25px;
+}
+
+/* ==========================
+   SOCIAL ICONS
+========================== */
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(37, 99, 235, 0.12);
+
+  color: #2563eb;
+  font-size: 23px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.22);
+}
+
+/* ==========================
+   RIGHT SIDE
+========================== */
+
+.hero-image {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  object-fit: contain;
+
+  filter: drop-shadow(
+    0 25px 45px rgba(59, 130, 246, 0.12)
+  );
+
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin: 0 auto;
+  }
+
+  .hero-buttons,
+  .social-icons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 200px;
+    text-align: center;
+  }
+}

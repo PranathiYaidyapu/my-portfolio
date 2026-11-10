@@ -1,0 +1,23 @@
+.resume-btn{
+
+    padding:.7rem 1.4rem;
+
+    border-radius:30px;
+
+    background:#2563EB;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.resume-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+}

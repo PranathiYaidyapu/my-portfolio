@@ -1,0 +1,42 @@
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.tech-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.75);
+
+  border: 1px solid rgba(37,99,235,.12);
+
+  backdrop-filter: blur(10px);
+
+  font-weight: 500;
+  color: #334155;
+
+  transition: .3s ease;
+}
+
+.tech-pill svg {
+  color: #2563EB;
+  font-size: 18px;
+}
+
+.tech-pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37,99,235,.15);
+}
+
+.tech-icon {
+  width: 18px;
+  height: 18px;
+}
